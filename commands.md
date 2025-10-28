@@ -7,3 +7,5 @@
 5. Add division and cover absolutely all scenarios with tests to ensure perfect testing.
 6. Add exponentiation, write only one test.
 7. Add logarithm, don't add tests.
+8. Add validation for logarithm operation.
+9. Add tests for logarithm validation.
