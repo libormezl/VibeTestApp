@@ -7,12 +7,11 @@ namespace VibeTestApp
         static void Main(string[] args)
         {
             // Initialize calculator with available operations
-            // Currently only addition is implemented
             var operations = new List<IOperation>
             {
-                new AdditionOperation()
+                new AdditionOperation(),
+                new SubtractionOperation()
                 // Future operations can be added here:
-                // new SubtractionOperation(),
                 // new MultiplicationOperation(),
                 // new DivisionOperation()
             };
@@ -23,14 +22,17 @@ namespace VibeTestApp
             Console.WriteLine($"Supported operations: {string.Join(", ", calculator.SupportedOperations)}");
             Console.WriteLine();
 
-            // Demonstrate addition
+            // Demonstrate operations
             double num1 = 10;
             double num2 = 5;
 
             try
             {
-                double result = calculator.Calculate(num1, num2, "+");
-                Console.WriteLine($"{num1} + {num2} = {result}");
+                double addResult = calculator.Calculate(num1, num2, "+");
+                Console.WriteLine($"{num1} + {num2} = {addResult}");
+
+                double subResult = calculator.Calculate(num1, num2, "-");
+                Console.WriteLine($"{num1} - {num2} = {subResult}");
             }
             catch (Exception ex)
             {
