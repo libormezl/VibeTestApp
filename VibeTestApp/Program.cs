@@ -13,7 +13,8 @@ namespace VibeTestApp
                 new SubtractionOperation(),
                 new MultiplicationOperation(),
                 new DivisionOperation(),
-                new PowerOperation()
+                new PowerOperation(),
+                new LogarithmOperation()
             };
 
             var calculator = new Calculator(operations);
@@ -42,6 +43,9 @@ namespace VibeTestApp
 
                 double powResult = calculator.Calculate(num1, num2, "^");
                 Console.WriteLine($"{num1} ^ {num2} = {powResult}");
+
+                double logResult = calculator.Calculate(100, 10, "log");
+                Console.WriteLine($"log_10(100) = {logResult}");
             }
             catch (Exception ex)
             {

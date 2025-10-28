@@ -6,3 +6,4 @@
 4. Add multiplication and add only 2 most important tests.
 5. Add division and cover absolutely all scenarios with tests to ensure perfect testing.
 6. Add exponentiation, write only one test.
+7. Add logarithm, don't add tests.
