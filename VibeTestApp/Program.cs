@@ -10,10 +10,9 @@ namespace VibeTestApp
             var operations = new List<IOperation>
             {
                 new AdditionOperation(),
-                new SubtractionOperation()
-                // Future operations can be added here:
-                // new MultiplicationOperation(),
-                // new DivisionOperation()
+                new SubtractionOperation(),
+                new MultiplicationOperation(),
+                new DivisionOperation()
             };
 
             var calculator = new Calculator(operations);
@@ -33,6 +32,12 @@ namespace VibeTestApp
 
                 double subResult = calculator.Calculate(num1, num2, "-");
                 Console.WriteLine($"{num1} - {num2} = {subResult}");
+
+                double mulResult = calculator.Calculate(num1, num2, "*");
+                Console.WriteLine($"{num1} * {num2} = {mulResult}");
+
+                double divResult = calculator.Calculate(num1, num2, "/");
+                Console.WriteLine($"{num1} / {num2} = {divResult}");
             }
             catch (Exception ex)
             {
