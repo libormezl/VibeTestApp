@@ -12,7 +12,8 @@ namespace VibeTestApp
                 new AdditionOperation(),
                 new SubtractionOperation(),
                 new MultiplicationOperation(),
-                new DivisionOperation()
+                new DivisionOperation(),
+                new PowerOperation()
             };
 
             var calculator = new Calculator(operations);
@@ -38,6 +39,9 @@ namespace VibeTestApp
 
                 double divResult = calculator.Calculate(num1, num2, "/");
                 Console.WriteLine($"{num1} / {num2} = {divResult}");
+
+                double powResult = calculator.Calculate(num1, num2, "^");
+                Console.WriteLine($"{num1} ^ {num2} = {powResult}");
             }
             catch (Exception ex)
             {
