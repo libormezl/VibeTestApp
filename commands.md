@@ -12,3 +12,4 @@
 10. Add validation for division by zero - throw DivideByZeroException instead of returning Infinity.
 11. Add MAX operation but don't write tests for it.
 12. Add MIN operation without tests, but write comprehensive tests for MAX.
+13. Add comprehensive tests for MIN operation.
