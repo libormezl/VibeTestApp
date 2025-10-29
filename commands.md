@@ -9,3 +9,5 @@
 7. Add logarithm, don't add tests.
 8. Add validation for logarithm operation.
 9. Add tests for logarithm validation.
+10. Add validation for division by zero - throw DivideByZeroException instead of returning Infinity.
+11. Add MAX operation but don't write tests for it.
